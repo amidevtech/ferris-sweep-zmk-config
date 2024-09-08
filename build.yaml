@@ -18,7 +18,7 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nrf52840dk_nrf52840
     shield: cradio_left
-  - board: nice_nano
+  - board: nrf52840dk_nrf52840
     shield: cradio_right
