@@ -69,11 +69,11 @@
         mid_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ESC     │  <       │  @       │  #       │  $       │   │  HOME    │  PG_DN   │  INS     │  PG_UP   │   END    │ 
-            &kp ESC   &kp LT      &kp AT     &kp HASH   &kp DLLR        &kp HOME   &kp PG_D   &kp INS   &kp PG_UP    &kp END   
+        //│  ESC     │  >       │  ]       │  )       │  }       │   │  HOME    │  PG_DN   │  INS     │  PG_UP   │   END    │ 
+            &kp ESC   &kp GT      &kp RBK   &kp RPAR    &kp RBRC        &kp HOME   &kp PG_D   &kp INS   &kp PG_UP    &kp END   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  TAB     │  >       │  3       │  4       │  5       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTRER  │
-            &kp TAB     &kp GT     &kp N3     &kp N4     &kp N5        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER
+        //│  TAB     │  <       │  [       │  (       │  {       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTRER  │
+            &kp TAB     &kp LT    &kp LBKT    &kp LPAR  &kp LBRC        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  LSHFT   │  LCTR    │  LALT    │  LGUI    │  CAPS    │   │          │  LGUI    │ LALT     │ LCTR     │ LSHFT    │
             &kp LSHFT  &kp LCTRL  &kp LALT   &kb LGUI   &kp CAPS        &trans    &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT
