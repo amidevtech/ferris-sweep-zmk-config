@@ -22,7 +22,7 @@ conditional_layers {
 &kp Q        &kp W        &kp F       &kp P       &kp B         &kp J        &kp L       &kp U           &kp Y             &kp SEMI
 &kp A        &kp R        &kp S       &kp T       &kp G         &kp M        &kp N       &kp E           &kp I             &kp O
 &mt LSHFT Z  &mt LCTRL X  &mt LALT C  &mt LGUI D  &kp V         &kp K        &mt LGUI H  &mt LALT COMMA  &mt LCTRL PERIOD  &mt LSHFT SLASH
-                                      &kp ESC     &lt 2 BSPC    &lt 1 SPACE  &kp RALT
+                                      &lt 3 ESC     &lt 2 BSPC    &lt 1 SPACE  &kp RALT
             >;
         };
 
@@ -41,6 +41,23 @@ conditional_layers {
 &kp A  &kp R  &kp S  &kp T    &kp G         &kp M        &kp N     &kp E  &kp I  &kp O
 &kp A  &kp R  &kp S  &kp T    &kp G         &kp M        &kp N     &kp E  &kp I  &kp O
                      &kp ESC  &lt 2 BSPC    &lt 1 SPACE  &kp RALT
+            >;
+        };
+
+        mid_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  ESC     │  >       │  ]       │  )       │  }       │   │  HOME    │  PG_DN   │  INS     │  PG_UP   │   END    │ 
+            &kp ESC   &kp GT      &kp RBK   &kp RPAR    &kp RBRC        &kp HOME   &kp PG_D   &kp INS   &kp PG_UP    &kp END   
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  TAB     │  <       │  [       │  (       │  {       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ENTRER  │
+            &kp TAB     &kp LT    &kp LBKT    &kp LPAR  &kp LBRC        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  LSHFT   │  LCTR    │  LALT    │  LGUI    │  CAPS    │   │          │  LGUI    │ LALT     │ LCTR     │ LSHFT    │
+            &kp LSHFT  &kp LCTRL  &kp LALT   &kb LGUI   &kp CAPS        &trans    &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &kp ESC    &kp BSPC       &trans      &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
