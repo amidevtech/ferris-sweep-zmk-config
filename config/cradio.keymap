@@ -26,7 +26,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 
@@ -86,16 +86,16 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│  F1      │  F2      │  F3      │  F4      │  F5      │   │  F6      │  F7      │  F8      │  F9      │   F10    │ 
+            &kp F1      &kp F2      &kp F3   &kp F4    &kp F5           &kp F7    &kp F7      &kp F8    &kp F9      &kp F10   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+        //│  TAB     │          │          │          │  F11     │   │  F12     │          │          │          │  ENTRER  │
+            &kp TAB     &trans     &trans      &trans    &kp F11        &kp F12    &trans      &trans    &trans    &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│  LSHFT   │  LCTR    │  LALT    │  LGUI    │  CAPS    │   │          │  LGUI    │ LALT     │ LCTR     │ LSHFT    │
+            &kp LSHFT  &kp LCTRL  &kp LALT   &kb LGUI   &kp CAPS        &trans    &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans    &kp BSPC       &trans      &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
