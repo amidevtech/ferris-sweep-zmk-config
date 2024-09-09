@@ -55,13 +55,13 @@
         //│  `       │  !       │  @       │  #       │  $       │   │ %        │  &       │  |       │  _       │   ~      │ 
             &kp GRAVE  &kp EXCL   &kp AT     &kp HASH   &kp DLLR      &kp PRCNT   &kp AMPS   &kp PIPE  &kp UNDER  &kp TILDE   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  1       │  2       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │   O      │
-             &kp 1      &kp 2       &kp S     &kp T     &kp G          &kp M      &kp N     &kp  E      &kp I      &kp O
+        //│  1       │  2       │  3       │  4       │  5       │   │  6       │  7       │  8       │  9       │   0      │
+             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
-            HRML(Z,      X,         C,         D)       &kp V          &kp K      HRMR(H,     COMMA,     DOT,       FSLH)
+        //│  *       │  /       │  +       │  -       │  =       │   │  "       │  '       │ , <      │ . >      │ / ?      │
+           HRML(ASTRK,    FSLH,     PLUS,     MINUS)    &kp EQUAL      &kp DQT    HRMR(SQT,     COMMA,     DOT,       FSLH)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 ESC   &kp BSPC     &lt 1 SPACE  &kp RALT
+                                             &kp ESC    &kp BSPC       &trans      &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
