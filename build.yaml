@@ -22,3 +22,8 @@ include:
     shield: cradio_left
   - board: nice_nano
     shield: cradio_right
+  # Flash this to each half once to clear persisted settings (including BLE identities),
+  # then flash your normal left/right firmware again and re-pair.
+  - board: nice_nano
+    shield: settings_reset
+    artifact-name: settings_reset
